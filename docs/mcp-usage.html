@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCP Tool Tester</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .important {
+            color: #d33;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>MCP Tool Usage Guide</h1>
+    
+    <h2>Common Error</h2>
+    <p>If you see this error: <code>MCP error -32602: Invalid arguments for tool get_filesystem_metadata: [{"code":"invalid_type","expected":"string","received":"undefined","path":["path"],"message":"Required"}]</code></p>
+    
+    <p>It means you're not providing the required <code>path</code> parameter when calling the <code>get_filesystem_metadata</code> tool.</p>
+    
+    <h2>Correct Usage</h2>
+    <p>When using the MCP client, you must always provide all required parameters for each tool:</p>
+    
+    <h3>1. Get Filesystem Metadata</h3>
+    <pre>
+mcp-client call-tool get_filesystem_metadata '{"path": "./package.json"}'
+    </pre>
+    <p class="important">The <code>path</code> parameter is required!</p>
+    
+    <h3>2. Get Weather Forecast</h3>
+    <pre>
+mcp-client call-tool get_weather_forecast '{"location": "New York"}'
+    </pre>
+    <p class="important">The <code>location</code> parameter is required!</p>
+    
+    <h3>3. Get System Info</h3>
+    <pre>
+mcp-client call-tool get_system_info '{}'
+    </pre>
+    <p>This tool doesn't require any parameters.</p>
+    
+    <h3>4. Verify OAuth Token</h3>
+    <pre>
+mcp-client call-tool verify_oauth_token '{"token": "YOUR_TOKEN", "service": "github"}'
+    </pre>
+    <p class="important">Both <code>token</code> and <code>service</code> parameters are required!</p>
+    
+    <h2>Running the MCP Server</h2>
+    <p>To start the MCP server:</p>
+    <pre>
+npm start
+    </pre>
+    <p>The server uses STDIO transport by default.</p>
+</body>
+</html> 
