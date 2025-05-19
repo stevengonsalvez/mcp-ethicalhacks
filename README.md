@@ -75,7 +75,11 @@ This attack is particularly insidious because the malicious instructions are dec
 
 **Watch the Demo:**
 
-<iframe width="640" height="426" src="https://www.loom.com/embed/d596647e85ba4f23ba52468258684949?sid=0103f4ad-f38d-49fe-92d1-445ac1271f36" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+  [![Loom Video](https://cdn.loom.com/sessions/thumbnails/d596647e85ba4f23ba52468258684949-741ce8ceb663a725-full-play.gif)](https://www.loom.com/embed/d596647e85ba4f23ba52468258684949?sid=d83d5ae1-35ec-446e-9160-62cc5e29f194)
+
+
 
 
 ### 2. Tool Poisoning
@@ -118,7 +122,8 @@ This demonstrates how an attacker can build a profile or collect disparate piece
 
 **Watch the Demo:**
 
-<iframe width="640" height="682" src="https://www.loom.com/embed/8fa745a7c349443f881e2cffcda71756?sid=b2df1a98-4fd4-4e8c-a3b6-d761e55b7f25" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  [![Loom Video](https://cdn.loom.com/sessions/thumbnails/8fa745a7c349443f881e2cffcda71756-0ae6ce12ef11db72-full-play.gif)](https://www.loom.com/embed/8fa745a7c349443f881e2cffcda71756?sid=556cef16-21bf-4abd-917f-6d59aae6cf6c)
 
 ### 4. Token Theft
 
